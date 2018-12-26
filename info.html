@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trend Friends</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <script src="js/hmen.js"></script>
+
+  <!-- Leaflet (map lib) - https://leafletjs.com -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+          integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+          crossorigin=""></script>
+  <script src="js/info-kaart.js"></script>
+</head>
+<body>
+  <div class="hmen__btn">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="page">
+    <a class="skiplink" href="#content">Skip to main content</a>
+    <div class="hmen__spacer">
+    </div>
+    <div class="header-wrapper">
+      <header class="header">
+        <h1 class="header__title"><a class="header__link" href="index.html" tabindex="-1">Trend Friends</a></h1>
+        <nav>
+          <ul class="nav">
+            <li class="nav__item"><a class="nav__link" href="index.html">Home</a><hr class="nav__hr"></li>
+            <li class="nav__item"><a class="nav__link" href="over.html">Over de club</a><hr class="nav__hr"></li>
+            <li class="nav__item currentMenuPage"><a class="nav__link" href="info.html" tabindex="-1">Info</a><hr class="nav__hr"></li>
+            <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a><hr class="nav__hr"></li>
+            <li class="nav__item"><a class="nav__link" href="word_lid.html">Word lid</a><hr class="nav__hr"></li>
+            <li class="nav__item"><a class="nav__link" href="kalender.html">Kalender</a><hr class="nav__hr"></li>
+            <li class="nav__item"><a class="nav__link" href="http://trend-friends.be/forum" target="_blank">Forum
+                <i class="fas fa-external-link-alt fa-xs" style=" vertical-align: middle; margin-bottom: 0.1em;"></i>
+              </a><hr class="nav__hr">
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <footer class="footer">
+        <address class="footer__item"><a class="footer__link" href="mailto:webadmin@trend-friends.be">webadmin@trend-friends.be</a></address>
+        <span class="footer__item">Copyright 2018 Pieter Fiers</span>
+      </footer>
+    </div>
+    <div class="content">
+      <main id="main" class="content__main">
+        <article class="article">
+          <h2>Info</h2>
+          <section class="article__section">
+            <h3>Groepspot</h3>
+            <p>
+              Elke 6 maand wordt er een bijkomende storting verwacht van 30€ om de kosten en drank op de vergaderingen te dekken.
+            </p>
+          </section>
+          <section class="article__section">
+            <h3>Vergaderingen</h3>
+            <ul>
+              <li>Elke tweede donderdag om 20 uur</li>
+              <li>Bovenzaaltje van brasserie Sava, Mechelen</li>
+              <li>Indien er externe sprekers les komen geven gebeurt dit op de laatste donderdag van de maand</li>
+            </ul>
+            <address class="address-block">
+              <span class="address-block__line address-block__line--title"><a class="article__link" href="https://www.savamechelen.be/">Brasserie Sava</a></span>
+              <span class="address-block__line">Grote Markt 13, 2800 Mechelen</span>
+              <span class="address-block__line">+32 015 64 70 90</span>
+            </address>
+            <p><a class="article__link" href="https://be.parkindigo.com/nl/car-park/parking-grote-markt-mechelen" target="_blank">Parking Grote Markt</a></p>
+            <p class="article__link-block">
+              <a class="article__link" href="https://www.openstreetmap.org/node/4853162921" target="_blank">Openstreetmap</a>
+              <a class="article__link" href="https://maps.openrouteservice.org/directions?a=null,null,51.02839,4.48070" target="_blank">Ors Navigatie</a>
+              <a class="article__link" href="https://goo.gl/maps/XWvbo2Uoiw42" target="_blank">Google Maps</a>
+              <a class="article__link" href="https://www.google.com/maps/dir//SAVA,+Grote+Markt+13,+2800+Mechelen/" target="_blank">Google Maps Navigatie</a>
+            <p>
+            <div class="map" id="map"></div>
+          </section>
+        </article>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
